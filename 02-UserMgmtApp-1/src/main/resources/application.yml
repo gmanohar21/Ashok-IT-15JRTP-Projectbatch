@@ -1,0 +1,37 @@
+server:
+  port: 7008
+spring:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    username: root
+    password: tiger
+    url: jdbc:mysql://localhost:3306/world
+  jpa:
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+    hibernate:
+      ddl-auto: update
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: gmanohar21@gmail.com
+    password: 7386190624@m
+    properties:
+      mail:
+        smtp:
+          starttls:
+            enable: true
+          auth: true
+app:
+  message:
+    welcomeMsg: good Morning
+    greetMsg: hi hello
+    AccDetails: Invalid Account Details
+    AccLock: Account is Locked
+    UserRegSucc: pls check email for unlocking your account
+    UserRegFail: user Reg Fail
+    UnlockAccEmailSub: Registration success
+    UnlockAccEmailBdyFile: mailBody.txt
+    recoverPwdEmailSub: Forgot Pasword
